@@ -1,4 +1,4 @@
-mport Surface_confined_inference as sci
+import Surface_confined_inference as sci
 from Surface_confined_inference.plot import plot_harmonics
 from Surface_confined_inference.infer import get_input_parameters
 import sys
@@ -40,8 +40,8 @@ slurm_class.setup(
     cpu_ram="8G",
     time="0-00:45:00",
     runs=5, 
-    threshold=1e-3, 
-    unchanged_iterations=100,   
+    threshold=1e-8, 
+    unchanged_iterations=200,   
     check_experiments={"DCV":"test_inference_DCV.txt", "FTACV":"test_inference_FTV.txt"},
     run=True,
 )
