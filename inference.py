@@ -32,7 +32,7 @@ slurm_class.boundaries = {"k0": [1e-3, 200],
 slurm_class.fixed_parameters = {
     "alpha":0.5,
 }
-slurm_class.dispersion_bins=[2]
+slurm_class.dispersion_bins=[16]
 slurm_class.optim_list = ["E0_mean", "E0_std","k0", "Cdl", "gamma",  "Ru", "CdlE1", "CdlE2", "CdlE3", "omega"]
 
 slurm_class.setup(
